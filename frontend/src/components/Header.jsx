@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, Leaf } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { navigationData } from '../data/mock';
 
 const Header = () => {
@@ -9,29 +9,16 @@ const Header = () => {
     <header className="w-full bg-white py-4 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="relative">
-            {/* Budlee Character - Green Leaf with Face */}
-            <div className="w-10 h-10 relative">
-              <svg viewBox="0 0 40 40" className="w-full h-full">
-                {/* Leaf body */}
-                <ellipse cx="20" cy="22" rx="14" ry="16" fill="#4CAF50" />
-                {/* Top leaves */}
-                <ellipse cx="14" cy="8" rx="6" ry="8" fill="#66BB6A" transform="rotate(-20 14 8)" />
-                <ellipse cx="26" cy="8" rx="6" ry="8" fill="#66BB6A" transform="rotate(20 26 8)" />
-                {/* Eyes */}
-                <ellipse cx="14" cy="20" rx="3" ry="3.5" fill="white" />
-                <ellipse cx="26" cy="20" rx="3" ry="3.5" fill="white" />
-                <circle cx="14" cy="20" r="1.5" fill="#333" />
-                <circle cx="26" cy="20" r="1.5" fill="#333" />
-                {/* Smile */}
-                <path d="M 14 28 Q 20 33 26 28" stroke="#333" strokeWidth="2" fill="none" strokeLinecap="round" />
-              </svg>
-            </div>
-          </div>
+        <div className="flex items-center gap-3">
+          {/* Budlee Character Logo */}
+          <img 
+            src="https://customer-assets.emergentagent.com/job_smart-budlee/artifacts/my42xssr_logo%20v1.png" 
+            alt="Budlee" 
+            className="w-14 h-14 object-contain"
+          />
           <div className="flex items-baseline">
-            <span className="text-2xl font-bold text-gray-800 tracking-tight">budlee</span>
-            <span className="text-2xl font-light text-gray-500 ml-1">AI</span>
+            <span className="logo-text text-3xl text-gray-800">Budlee</span>
+            <span className="text-2xl font-light text-gray-400 ml-1">AI</span>
           </div>
         </div>
 
