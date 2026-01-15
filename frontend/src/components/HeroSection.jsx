@@ -17,11 +17,11 @@ const HeroSection = () => {
                 <div className="absolute inset-0 bg-gray-200 rounded-3xl transform translate-x-3 translate-y-3 -rotate-1"></div>
                 
                 {/* Main Image Container */}
-                <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-white border-4 border-white">
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-white border-4 border-white w-[420px] h-[320px]">
                   <img
                     src={heroData.heroImage}
                     alt="Student learning with Budlee AI"
-                    className="w-full max-w-[420px] h-auto object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                   
                   {/* Laptop/Screen Overlay */}
