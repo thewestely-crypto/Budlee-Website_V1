@@ -1,7 +1,7 @@
 import React from 'react';
 import { Play } from 'lucide-react';
 import { Button } from './ui/button';
-import { heroData, curriculumData } from '../data/mock';
+import { heroData, curriculumData } from '../data/mock.js';
 
 const HeroSection = () => {
   return (
