@@ -1,17 +1,19 @@
 /* Budlee AI - Custom Styles */
 
-/* Import Google Fonts - Nunito for body, Varela Round for hero tagline (similar to Duolingo) */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Varela+Round&display=swap');
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
 
 * {
   font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* Hero tagline with Duolingo-style rounded bold font */
+/* Hero tagline with Duolingo-style bold rounded font */
 .hero-tagline {
-  font-family: 'Varela Round', 'Nunito', sans-serif;
-  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
   color: #4b4b4b;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
 }
 
 /* Smooth scrolling */
