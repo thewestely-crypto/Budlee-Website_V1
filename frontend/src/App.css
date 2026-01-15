@@ -1,10 +1,17 @@
 /* Budlee AI - Custom Styles */
 
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+/* Import Google Fonts - Nunito for body, DM Serif Display for hero tagline */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito:wght@400;500;600;700;800&display=swap');
 
 * {
   font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Hero tagline with Duolingo-style serif font */
+.hero-tagline {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
 }
 
 /* Smooth scrolling */
@@ -17,27 +24,13 @@ html {
   text-align: left;
 }
 
-/* Hide scrollbar for curriculum cards */
+/* Hide scrollbar */
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
-}
-
-/* Custom animations */
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-.animate-float {
-  animation: float 3s ease-in-out infinite;
 }
 
 /* Button hover effects */
