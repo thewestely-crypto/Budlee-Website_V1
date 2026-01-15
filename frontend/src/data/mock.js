@@ -1,9 +1,7 @@
 // Mock data for Budlee AI Landing Page
 
 export const heroData = {
-  headline: "Understand better.",
-  subHeadline: "Discover curiosity early.",
-  description: "Budlee is an AI learning companion that helps students understand lessons clearly — and quietly reveals what they're naturally curious about.",
+  tagline: "Helps students understand lessons better and discover their natural curiosity early.",
   primaryCTA: "Get Started for Students",
   secondaryCTA: "For Schools & Partners",
   heroImage: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=450&fit=crop"

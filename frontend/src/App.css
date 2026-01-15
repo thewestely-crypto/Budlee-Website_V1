@@ -1,10 +1,10 @@
 /* Budlee AI - Custom Styles */
 
 /* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
 
 * {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 /* Smooth scrolling */
@@ -17,6 +17,15 @@ html {
   text-align: left;
 }
 
+/* Hide scrollbar for curriculum cards */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 /* Custom animations */
 @keyframes float {
   0%, 100% {
@@ -27,47 +36,13 @@ html {
   }
 }
 
-@keyframes pulse-ring {
-  0% {
-    transform: scale(0.95);
-    opacity: 0.5;
-  }
-  50% {
-    transform: scale(1.05);
-    opacity: 0.3;
-  }
-  100% {
-    transform: scale(0.95);
-    opacity: 0.5;
-  }
-}
-
 .animate-float {
   animation: float 3s ease-in-out infinite;
-}
-
-.animate-pulse-ring {
-  animation: pulse-ring 2s ease-in-out infinite;
 }
 
 /* Button hover effects */
 button {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Card hover effects */
-.card-hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-hover:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-}
-
-/* Green gradient for special elements */
-.green-gradient {
-  background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
 }
 
 /* Selection color */
@@ -80,15 +55,4 @@ button {
 input:focus,
 button:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
-}
-
-/* Responsive typography */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2.5rem !important;
-  }
-  h2 {
-    font-size: 2rem !important;
-  }
 }
