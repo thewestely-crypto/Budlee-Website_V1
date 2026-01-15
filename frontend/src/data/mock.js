@@ -5,7 +5,7 @@ export const heroData = {
   taglineLine2: "and discover curiosity early.",
   primaryCTA: "Get Started for Students",
   secondaryCTA: "For Schools & Partners",
-  heroImage: "https://images.unsplash.com/photo-1623076189461-f7706b741c04?w=500&h=400&fit=crop"
+  heroImage: "https://customer-assets.emergentagent.com/job_smart-budlee/artifacts/obtc00t1_Gemini_Generated_Image_93m1xk93m1xk93m1.png"
 };
 
 export const curriculumData = {
