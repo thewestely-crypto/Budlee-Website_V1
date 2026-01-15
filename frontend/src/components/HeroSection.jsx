@@ -62,17 +62,17 @@ const HeroSection = () => {
 
             {/* Right Side - Content */}
             <div className="w-full lg:w-1/2 text-center">
-              <div className="mb-12">
-                <p className="hero-tagline text-2xl md:text-3xl lg:text-[32px] text-gray-800 leading-relaxed">
+              <div className="mb-10">
+                <p className="hero-tagline text-3xl md:text-4xl lg:text-5xl leading-tight">
                   {heroData.taglineLine1}
                 </p>
-                <p className="hero-tagline text-2xl md:text-3xl lg:text-[32px] text-gray-800 leading-relaxed mt-3">
+                <p className="hero-tagline text-3xl md:text-4xl lg:text-5xl leading-tight mt-6">
                   {heroData.taglineLine2}
                 </p>
               </div>
 
-              {/* CTA Buttons - Stacked like Duolingo */}
-              <div className="flex flex-col gap-4 max-w-sm mx-auto lg:mx-0">
+              {/* CTA Buttons - Centered */}
+              <div className="flex flex-col gap-4 max-w-sm mx-auto">
                 <Button 
                   className="w-full bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-7 text-base rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 uppercase tracking-wider"
                 >
