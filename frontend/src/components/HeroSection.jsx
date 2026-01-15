@@ -114,18 +114,23 @@ const HeroSection = () => {
               </div>
 
               {/* CTA Buttons - Centered */}
-              <div className="flex flex-col gap-4 w-full max-w-sm">
+              <div className="flex flex-col items-center gap-4 w-full max-w-sm">
                 <Button 
                   className="w-full bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-7 text-base rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 uppercase tracking-wider"
                 >
-                  {heroData.primaryCTA}
+                  Start Learning
                 </Button>
-                <Button 
-                  variant="outline"
-                  className="w-full border-2 border-gray-200 bg-white text-gray-500 font-bold px-8 py-7 text-base rounded-2xl hover:border-gray-300 hover:bg-gray-50 transition-all duration-300 uppercase tracking-wider"
-                >
-                  {heroData.secondaryCTA}
-                </Button>
+                
+                {/* School Link */}
+                <p className="text-gray-500 text-sm mt-2">
+                  Are you a school?{' '}
+                  <a 
+                    href="#" 
+                    className="text-green-600 font-semibold underline underline-offset-2 hover:text-green-700 transition-colors"
+                  >
+                    Get Budlee for Your School
+                  </a>
+                </p>
               </div>
             </div>
           </div>
