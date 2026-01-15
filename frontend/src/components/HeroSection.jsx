@@ -160,7 +160,7 @@ const HeroSection = () => {
                   key={index}
                   className="bg-gradient-to-r from-green-400 to-green-500 text-white font-bold text-sm px-4 py-1.5 rounded-full shadow-sm hover:shadow-md hover:from-green-500 hover:to-green-600 transition-all duration-300 cursor-pointer"
                 >
-                  {item.class.replace('Class ', '')}
+                  {item.class}
                 </div>
               ))}
             </div>
