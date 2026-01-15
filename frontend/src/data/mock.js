@@ -1,7 +1,8 @@
 // Mock data for Budlee AI Landing Page
 
 export const heroData = {
-  tagline: "Helps students understand lessons better and discover their natural curiosity early.",
+  taglineLine1: "Helps students understand lessons",
+  taglineLine2: "and discover curiosity early.",
   primaryCTA: "Get Started for Students",
   secondaryCTA: "For Schools & Partners",
   heroImage: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=450&fit=crop"
