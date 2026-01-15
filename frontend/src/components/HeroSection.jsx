@@ -63,10 +63,10 @@ const HeroSection = () => {
             {/* Right Side - Content */}
             <div className="w-full lg:w-1/2 flex flex-col items-center">
               <div className="text-center mb-10">
-                <h1 className="hero-tagline text-4xl md:text-5xl lg:text-[52px]">
+                <h1 className="hero-tagline text-3xl md:text-4xl lg:text-[42px] whitespace-nowrap">
                   Helps students understand lessons
                 </h1>
-                <h1 className="hero-tagline text-4xl md:text-5xl lg:text-[52px] mt-2">
+                <h1 className="hero-tagline text-3xl md:text-4xl lg:text-[42px] whitespace-nowrap mt-4">
                   and discover curiosity early.
                 </h1>
               </div>
