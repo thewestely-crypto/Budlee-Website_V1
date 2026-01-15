@@ -61,18 +61,18 @@ const HeroSection = () => {
             </div>
 
             {/* Right Side - Content */}
-            <div className="w-full lg:w-1/2 text-center">
-              <div className="mb-10">
-                <p className="hero-tagline text-3xl md:text-4xl lg:text-5xl leading-tight">
-                  {heroData.taglineLine1}
-                </p>
-                <p className="hero-tagline text-3xl md:text-4xl lg:text-5xl leading-tight mt-6">
-                  {heroData.taglineLine2}
-                </p>
+            <div className="w-full lg:w-1/2 flex flex-col items-center">
+              <div className="text-center mb-10">
+                <h1 className="hero-tagline text-4xl md:text-5xl lg:text-[52px]">
+                  Helps students understand lessons
+                </h1>
+                <h1 className="hero-tagline text-4xl md:text-5xl lg:text-[52px] mt-2">
+                  and discover curiosity early.
+                </h1>
               </div>
 
               {/* CTA Buttons - Centered */}
-              <div className="flex flex-col gap-4 max-w-sm mx-auto">
+              <div className="flex flex-col gap-4 w-full max-w-sm">
                 <Button 
                   className="w-full bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-7 text-base rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 uppercase tracking-wider"
                 >
