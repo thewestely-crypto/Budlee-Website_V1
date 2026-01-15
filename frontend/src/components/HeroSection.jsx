@@ -122,7 +122,7 @@ const HeroSection = () => {
                 </Button>
                 
                 {/* School Link */}
-                <p className="text-gray-500 text-sm mt-2">
+                <p className="text-gray-500 text-base mt-2">
                   Are you a school?{' '}
                   <a 
                     href="#" 
