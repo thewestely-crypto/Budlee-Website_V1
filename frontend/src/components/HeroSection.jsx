@@ -86,9 +86,9 @@ const HeroSection = () => {
               </div>
               
               {/* Budlee Character with Speech Bubble */}
-              <div className="absolute -bottom-4 -right-4 lg:-right-8 z-20">
+              <div className="absolute -bottom-2 -right-2 lg:-right-6 z-20">
                 {/* Speech Bubble */}
-                <div className="absolute -top-16 left-1/2 -translate-x-1/2 bg-white rounded-2xl px-4 py-2 shadow-lg whitespace-nowrap">
+                <div className="absolute -top-14 left-1/2 -translate-x-1/2 bg-white rounded-2xl px-4 py-2 shadow-lg whitespace-nowrap">
                   <span className="text-gray-700 font-semibold text-sm">Talk to Budlee</span>
                   {/* Bubble tail */}
                   <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white transform rotate-45"></div>
@@ -97,14 +97,14 @@ const HeroSection = () => {
                 <img 
                   src="https://customer-assets.emergentagent.com/job_smart-budlee/artifacts/my42xssr_logo%20v1.png" 
                   alt="Budlee" 
-                  className="w-24 h-24 object-contain animate-bounce-gentle cursor-pointer hover:scale-110 transition-transform"
+                  className="w-20 h-20 object-contain animate-bounce-gentle cursor-pointer hover:scale-110 transition-transform"
                 />
               </div>
             </div>
 
             {/* Right Side - Content */}
             <div className="w-full lg:w-1/2 flex flex-col items-center">
-              <div className="text-center mb-10">
+              <div className="text-center mb-8">
                 <h1 className="hero-tagline text-2xl md:text-3xl lg:text-[32px] whitespace-nowrap">
                   Helps students understand lessons
                 </h1>
