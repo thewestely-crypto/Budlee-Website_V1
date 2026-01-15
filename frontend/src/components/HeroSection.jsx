@@ -57,7 +57,7 @@ const HeroSection = () => {
                 <div className="absolute inset-0 bg-green-200/50 rounded-3xl transform translate-x-3 translate-y-3 -rotate-1"></div>
                 
                 {/* Main Image Container */}
-                <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-white border-4 border-white w-[380px] h-[290px]">
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-white border-4 border-white w-[420px] h-[320px]">
                   <img
                     src={heroData.heroImage}
                     alt="Student learning with Budlee AI"
