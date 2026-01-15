@@ -133,7 +133,7 @@ const HeroSection = () => {
       </div>
 
       {/* CBSE Curriculum Section - Single Line */}
-      <div className="w-full bg-white/80 backdrop-blur-sm py-6 px-6 md:px-12 lg:px-20 border-t border-gray-100 relative z-10">
+      <div className="w-full bg-white/80 backdrop-blur-sm py-5 px-6 md:px-12 lg:px-20 border-t border-gray-100 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
             {/* Title */}
@@ -142,17 +142,25 @@ const HeroSection = () => {
             </span>
             
             {/* Separator */}
-            <div className="hidden md:block w-px h-8 bg-gray-200"></div>
+            <div className="hidden md:block w-px h-6 bg-gray-200"></div>
 
-            {/* Class Cards - All in one row */}
-            <div className="flex items-center gap-3">
+            {/* Science Label with Icon */}
+            <div className="flex items-center gap-2 text-gray-600">
+              <FlaskConical className="w-5 h-5 text-green-500" />
+              <span className="font-semibold">Science</span>
+            </div>
+
+            {/* Separator */}
+            <div className="hidden md:block w-px h-6 bg-gray-200"></div>
+
+            {/* Class Pills - Green Gradient */}
+            <div className="flex items-center gap-2">
               {curriculumData.classes.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-xl px-4 py-2 shadow-sm border border-gray-100 hover:shadow-md hover:border-green-200 transition-all duration-300 cursor-pointer"
+                  className="bg-gradient-to-r from-green-400 to-green-500 text-white font-bold text-sm px-4 py-1.5 rounded-full shadow-sm hover:shadow-md hover:from-green-500 hover:to-green-600 transition-all duration-300 cursor-pointer"
                 >
-                  <span className="text-green-600 font-bold text-sm">{item.class}</span>
-                  <span className="text-gray-400 text-sm ml-1">{item.subject}</span>
+                  {item.class.replace('Class ', '')}
                 </div>
               ))}
             </div>
