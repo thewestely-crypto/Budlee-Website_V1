@@ -8,21 +8,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo & Description */}
           <div className="md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8">
-                <svg viewBox="0 0 40 40" className="w-full h-full">
-                  <ellipse cx="20" cy="22" rx="14" ry="16" fill="#4CAF50" />
-                  <ellipse cx="14" cy="8" rx="6" ry="8" fill="#66BB6A" transform="rotate(-20 14 8)" />
-                  <ellipse cx="26" cy="8" rx="6" ry="8" fill="#66BB6A" transform="rotate(20 26 8)" />
-                  <ellipse cx="14" cy="20" rx="3" ry="3.5" fill="white" />
-                  <ellipse cx="26" cy="20" rx="3" ry="3.5" fill="white" />
-                  <circle cx="14" cy="20" r="1.5" fill="#333" />
-                  <circle cx="26" cy="20" r="1.5" fill="#333" />
-                  <path d="M 14 28 Q 20 33 26 28" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round" />
-                </svg>
-              </div>
+            <div className="flex items-center gap-3 mb-4">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_smart-budlee/artifacts/my42xssr_logo%20v1.png" 
+                alt="Budlee" 
+                className="w-10 h-10 object-contain"
+              />
               <div className="flex items-baseline">
-                <span className="text-xl font-bold">budlee</span>
+                <span className="logo-text text-2xl text-white">Budlee</span>
                 <span className="text-xl font-light text-gray-400 ml-1">AI</span>
               </div>
             </div>
