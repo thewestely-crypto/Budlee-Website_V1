@@ -56,7 +56,7 @@ const HeroSection = () => {
             </div>
 
             {/* Right Side - Content */}
-            <div className="w-full lg:w-1/2 text-center lg:text-left">
+            <div className="w-full lg:w-1/2 text-center">
               <div className="mb-12">
                 <p className="hero-tagline text-2xl md:text-3xl lg:text-[32px] text-gray-800 leading-relaxed">
                   {heroData.taglineLine1}
