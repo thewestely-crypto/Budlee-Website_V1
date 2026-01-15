@@ -34,7 +34,7 @@ const Header = () => {
         <Button 
           className="bg-green-500 hover:bg-green-600 text-white font-bold px-6 py-5 text-sm rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
         >
-          Try Budlee Free
+          Experience Budlee
         </Button>
       </div>
     </header>
