@@ -5,51 +5,51 @@ import { heroData, curriculumData } from '../data/mock.js';
 
 const HeroSection = () => {
   return (
-    <section className="w-full min-h-[calc(100vh-80px)] flex flex-col relative overflow-hidden">
+    <section className="w-full min-h-[calc(100vh-88px)] flex flex-col relative overflow-hidden">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-green-50 via-yellow-50 to-orange-50"></div>
       
       {/* Floating Doodles */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Top Left - Atom */}
-        <div className="absolute top-20 left-[10%] text-green-300 animate-float-slow">
-          <Atom className="w-12 h-12 opacity-60" />
+        <div className="absolute top-8 left-[8%] text-green-300 animate-float-slow">
+          <Atom className="w-10 h-10 opacity-60" />
         </div>
         
         {/* Top Right - Flask */}
-        <div className="absolute top-32 right-[15%] text-yellow-400 animate-float-medium">
-          <FlaskConical className="w-10 h-10 opacity-50" />
+        <div className="absolute top-12 right-[12%] text-yellow-400 animate-float-medium">
+          <FlaskConical className="w-8 h-8 opacity-50" />
         </div>
         
         {/* Middle Left - Lightbulb */}
-        <div className="absolute top-1/2 left-[5%] text-orange-300 animate-float-fast">
-          <Lightbulb className="w-8 h-8 opacity-50" />
+        <div className="absolute top-1/3 left-[4%] text-orange-300 animate-float-fast">
+          <Lightbulb className="w-7 h-7 opacity-50" />
         </div>
         
         {/* Bottom Right - Stars */}
-        <div className="absolute bottom-40 right-[8%] text-green-400 animate-float-slow">
-          <Star className="w-10 h-10 opacity-40 fill-current" />
+        <div className="absolute bottom-28 right-[6%] text-green-400 animate-float-slow">
+          <Star className="w-8 h-8 opacity-40 fill-current" />
         </div>
         
         {/* Top Center - Sparkles */}
-        <div className="absolute top-16 left-[40%] text-yellow-400 animate-float-medium">
-          <Sparkles className="w-8 h-8 opacity-50" />
+        <div className="absolute top-6 left-[35%] text-yellow-400 animate-float-medium">
+          <Sparkles className="w-6 h-6 opacity-50" />
         </div>
         
         {/* Bottom Left - Star */}
-        <div className="absolute bottom-32 left-[12%] text-orange-400 animate-float-fast">
-          <Star className="w-6 h-6 opacity-40 fill-current" />
+        <div className="absolute bottom-24 left-[10%] text-orange-400 animate-float-fast">
+          <Star className="w-5 h-5 opacity-40 fill-current" />
         </div>
 
         {/* Decorative circles */}
-        <div className="absolute top-40 right-[25%] w-20 h-20 rounded-full bg-green-200 opacity-20 animate-pulse-slow"></div>
-        <div className="absolute bottom-60 left-[20%] w-16 h-16 rounded-full bg-yellow-200 opacity-20 animate-pulse-slow"></div>
+        <div className="absolute top-20 right-[22%] w-16 h-16 rounded-full bg-green-200 opacity-20 animate-pulse-slow"></div>
+        <div className="absolute bottom-40 left-[18%] w-12 h-12 rounded-full bg-yellow-200 opacity-20 animate-pulse-slow"></div>
       </div>
 
       {/* Main Hero Content */}
-      <div className="flex-grow flex items-center justify-center px-6 md:px-12 lg:px-20 py-16 relative z-10">
+      <div className="flex-grow flex items-center justify-center px-6 md:px-12 lg:px-20 py-8 relative z-10">
         <div className="max-w-6xl mx-auto w-full">
-          <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
             {/* Left Side - Tilted Image with Play Button */}
             <div className="relative w-full lg:w-1/2 flex justify-center">
               <div className="relative transform rotate-2 hover:rotate-0 transition-transform duration-500">
