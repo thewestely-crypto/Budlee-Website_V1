@@ -38,11 +38,16 @@ const HeroSection = () => {
                     </div>
                   </div>
 
-                  {/* Play Button */}
-                  <button className="absolute left-6 top-1/2 -translate-y-1/2 group">
-                    <div className="w-14 h-14 rounded-full bg-white shadow-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <div className="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
-                        <Play className="w-4 h-4 text-white fill-white ml-0.5" />
+                  {/* Play Button - Prominent and Clickable */}
+                  <button className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 group">
+                    <div className="relative">
+                      {/* Outer pulsing ring */}
+                      <div className="absolute inset-0 w-20 h-20 -m-2 rounded-full bg-white/30 animate-ping"></div>
+                      {/* Main button */}
+                      <div className="w-16 h-16 rounded-full bg-white shadow-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 relative z-10">
+                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center shadow-lg">
+                          <Play className="w-5 h-5 text-white fill-white ml-0.5" />
+                        </div>
                       </div>
                     </div>
                   </button>
