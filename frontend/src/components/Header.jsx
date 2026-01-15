@@ -14,12 +14,9 @@ const Header = () => {
           <img 
             src="https://customer-assets.emergentagent.com/job_smart-budlee/artifacts/my42xssr_logo%20v1.png" 
             alt="Budlee" 
-            className="w-14 h-14 object-contain"
+            className="w-16 h-16 object-contain"
           />
-          <div className="flex items-baseline">
-            <span className="logo-text text-3xl text-gray-800">Budlee</span>
-            <span className="text-2xl font-light text-gray-400 ml-1">AI</span>
-          </div>
+          <span className="logo-text text-3xl text-gray-900">Budlee AI</span>
         </div>
 
         {/* Navigation */}
