@@ -40,8 +40,20 @@ const UnderstandingSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-green-100 via-white to-yellow-50">
                   {/* Decorative elements inside video frame */}
                   <div className="absolute top-4 left-4 w-12 h-12 bg-green-200 rounded-full opacity-40"></div>
-                  <div className="absolute bottom-8 right-8 w-16 h-16 bg-yellow-200 rounded-full opacity-30"></div>
-                  <div className="absolute top-1/2 left-1/4 w-8 h-8 bg-orange-200 rounded-full opacity-30"></div>
+                  <div className="absolute top-1/4 right-1/4 w-8 h-8 bg-orange-200 rounded-full opacity-30"></div>
+                  
+                  {/* Chat bubble hints */}
+                  <div className="absolute top-8 left-16 bg-white/60 rounded-xl px-3 py-1.5 shadow-sm">
+                    <div className="flex items-center gap-1">
+                      <span className="text-gray-400 text-xs">?</span>
+                      <div className="w-12 h-1.5 bg-gray-200 rounded"></div>
+                    </div>
+                  </div>
+                  <div className="absolute top-20 right-12 bg-green-100/80 rounded-xl px-3 py-1.5 shadow-sm">
+                    <div className="flex items-center gap-1">
+                      <div className="w-16 h-1.5 bg-green-300 rounded"></div>
+                    </div>
+                  </div>
                 </div>
                 
                 {/* Play Button */}
@@ -58,27 +70,23 @@ const UnderstandingSection = () => {
                   </div>
                 </button>
 
-                {/* "See Budlee in action" text */}
-                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/80 backdrop-blur-sm rounded-full px-4 py-1.5 shadow-md">
-                  <span className="text-gray-600 text-sm font-medium">See Budlee in action</span>
-                </div>
-              </div>
-
-              {/* Budlee Character - Waving/Helping */}
-              <div className="absolute -top-8 -left-8 md:-top-10 md:-left-10 z-20">
-                <div className="relative">
-                  {/* Speech bubble */}
-                  <div className="absolute -top-12 left-1/2 -translate-x-1/2 bg-white rounded-2xl px-3 py-2 shadow-lg whitespace-nowrap animate-bounce-gentle">
-                    <span className="text-gray-700 font-semibold text-xs md:text-sm">Talk to Budlee</span>
-                    {/* Bubble tail */}
-                    <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-3 h-3 bg-white transform rotate-45"></div>
+                {/* Budlee Character - Inside video frame at bottom right */}
+                <div className="absolute bottom-3 right-3 md:bottom-4 md:right-4 z-20">
+                  <div className="relative">
+                    {/* Yellow background circle */}
+                    <div className="absolute inset-0 w-16 h-16 md:w-20 md:h-20 bg-yellow-300 rounded-full -m-1 md:-m-2 shadow-lg"></div>
+                    {/* Budlee with wave animation */}
+                    <img 
+                      src="https://customer-assets.emergentagent.com/job_smart-budlee/artifacts/my42xssr_logo%20v1.png" 
+                      alt="Budlee" 
+                      className="w-14 h-14 md:w-16 md:h-16 object-contain animate-wave cursor-pointer hover:scale-110 transition-transform duration-300 relative z-10"
+                    />
                   </div>
-                  {/* Budlee with wave animation */}
-                  <img 
-                    src="https://customer-assets.emergentagent.com/job_smart-budlee/artifacts/my42xssr_logo%20v1.png" 
-                    alt="Budlee" 
-                    className="w-20 h-20 md:w-24 md:h-24 object-contain animate-wave cursor-pointer hover:scale-110 transition-transform duration-300"
-                  />
+                </div>
+
+                {/* "Talk to Budlee" text */}
+                <div className="absolute bottom-3 left-3 md:bottom-4 md:left-4 bg-white/90 backdrop-blur-sm rounded-full px-4 py-1.5 shadow-md">
+                  <span className="text-gray-700 text-sm font-semibold">Talk to Budlee</span>
                 </div>
               </div>
             </div>
