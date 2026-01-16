@@ -2,14 +2,14 @@ import React from 'react';
 
 const CuriositySection = () => {
   const interestTopics = [
-    { name: "Space", angle: 0, distance: 85, size: "large", delay: "0s" },
-    { name: "AI", angle: 45, distance: 90, size: "large", delay: "0.5s" },
-    { name: "Robotics", angle: 90, distance: 80, size: "medium", delay: "1s" },
-    { name: "Quantum", angle: 135, distance: 88, size: "small", delay: "0.3s" },
-    { name: "Mars", angle: 180, distance: 85, size: "medium", delay: "0.8s" },
-    { name: "Coding", angle: 225, distance: 82, size: "small", delay: "1.2s" },
-    { name: "Astronomy", angle: 270, distance: 88, size: "small", delay: "0.6s" },
-    { name: "Neurons", angle: 315, distance: 85, size: "small", delay: "0.2s" },
+    { name: "Space", angle: 0, size: "large", delay: "0s" },
+    { name: "AI", angle: 45, size: "large", delay: "0.5s" },
+    { name: "Robotics", angle: 90, size: "medium", delay: "1s" },
+    { name: "Quantum", angle: 135, size: "small", delay: "0.3s" },
+    { name: "Mars", angle: 180, size: "medium", delay: "0.8s" },
+    { name: "Coding", angle: 225, size: "small", delay: "1.2s" },
+    { name: "Astronomy", angle: 270, size: "medium", delay: "0.6s" },
+    { name: "Neurons", angle: 315, size: "small", delay: "0.2s" },
   ];
 
   const getSizeClasses = (size) => {
@@ -25,17 +25,6 @@ const CuriositySection = () => {
     }
   };
 
-  const getPosition = (angle, distance) => {
-    const radian = (angle * Math.PI) / 180;
-    const x = Math.cos(radian) * distance;
-    const y = Math.sin(radian) * distance;
-    return {
-      left: `calc(50% + ${x}px)`,
-      top: `calc(50% + ${y}px)`,
-      transform: 'translate(-50%, -50%)'
-    };
-  };
-
   return (
     <section className="w-full bg-gradient-to-br from-green-50/50 via-white to-yellow-50/30 py-16 md:py-24 px-4 md:px-12 lg:px-20">
       <div className="max-w-6xl mx-auto">
@@ -48,22 +37,51 @@ const CuriositySection = () => {
               <div className="absolute inset-0 w-[280px] h-[280px] md:w-[360px] md:h-[360px] bg-gradient-to-br from-green-200/30 to-yellow-200/30 rounded-full blur-xl -m-4"></div>
               
               {/* Main Circular Container */}
-              <div className="relative w-[280px] h-[280px] md:w-[360px] md:h-[360px] rounded-full bg-gradient-to-br from-white to-green-50/80 shadow-2xl border-4 border-white overflow-visible">
+              <div className="relative w-[280px] h-[280px] md:w-[360px] md:h-[360px] rounded-full bg-gradient-to-br from-white to-green-50/80 shadow-2xl border-4 border-white">
                 
                 {/* Orbital rings */}
                 <div className="absolute inset-4 md:inset-6 rounded-full border border-green-200/40"></div>
                 <div className="absolute inset-12 md:inset-16 rounded-full border border-green-200/30"></div>
                 <div className="absolute inset-20 md:inset-24 rounded-full border border-green-200/20"></div>
 
-                {/* Floating Interest Bubbles - Orbiting */}
+                {/* Floating Interest Bubbles - Evenly distributed at 45° intervals */}
                 {interestTopics.map((topic, index) => {
-                  const mobileDistance = topic.distance * 0.75;
+                  // Calculate position based on angle (0° = right, 90° = bottom, 180° = left, 270° = top)
+                  const radius = 120; // distance from center in px for desktop
+                  const mobileRadius = 95; // distance from center for mobile
+                  const angleInRadians = (topic.angle * Math.PI) / 180;
+                  
                   return (
                     <div
                       key={index}
-                      className="absolute animate-float-slow z-10"
+                      className="absolute animate-float-slow z-10 hidden md:block"
                       style={{
-                        ...getPosition(topic.angle, window?.innerWidth < 768 ? mobileDistance : topic.distance),
+                        left: `calc(50% + ${Math.cos(angleInRadians) * radius}px)`,
+                        top: `calc(50% + ${Math.sin(angleInRadians) * radius}px)`,
+                        transform: 'translate(-50%, -50%)',
+                        animationDelay: topic.delay
+                      }}
+                    >
+                      <div className={`bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 cursor-pointer whitespace-nowrap ${getSizeClasses(topic.size)}`}>
+                        {topic.name}
+                      </div>
+                    </div>
+                  );
+                })}
+
+                {/* Mobile version of bubbles */}
+                {interestTopics.map((topic, index) => {
+                  const mobileRadius = 95;
+                  const angleInRadians = (topic.angle * Math.PI) / 180;
+                  
+                  return (
+                    <div
+                      key={`mobile-${index}`}
+                      className="absolute animate-float-slow z-10 md:hidden"
+                      style={{
+                        left: `calc(50% + ${Math.cos(angleInRadians) * mobileRadius}px)`,
+                        top: `calc(50% + ${Math.sin(angleInRadians) * mobileRadius}px)`,
+                        transform: 'translate(-50%, -50%)',
                         animationDelay: topic.delay
                       }}
                     >
@@ -87,10 +105,6 @@ const CuriositySection = () => {
                       alt="Budlee" 
                       className="w-14 h-14 md:w-16 md:h-16 object-contain animate-nod cursor-pointer hover:scale-110 transition-transform duration-300 relative z-10"
                     />
-                    {/* Observing indicator */}
-                    <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-white rounded-full px-2 py-1 shadow-md">
-                      <span className="text-xs">👀</span>
-                    </div>
                   </div>
                 </div>
               </div>
