@@ -8,8 +8,8 @@ const AfterSchoolSection = () => {
           
           {/* Left Side - Text Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
-            {/* Headline */}
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-600 mb-8 md:mb-10 leading-tight">
+            {/* Headline - Same font as hero tagline */}
+            <h2 className="hero-tagline text-2xl md:text-3xl lg:text-[32px] mb-8 md:mb-10 whitespace-nowrap">
               What happens after school?
             </h2>
             
