@@ -75,7 +75,7 @@ const ParentsSection = () => {
                       <span className="text-green-600 font-bold text-sm">85%</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2.5">
-                      <div className="bg-gradient-to-r from-green-400 to-green-500 h-2.5 rounded-full" style={{ width: '85%' }}></div>
+                      <div className="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-400 h-2.5 rounded-full" style={{ width: '85%' }}></div>
                     </div>
                     <p className="text-gray-500 text-xs mt-2">Chapter 5: Light & Reflection</p>
                   </div>
