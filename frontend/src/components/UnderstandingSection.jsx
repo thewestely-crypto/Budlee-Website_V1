@@ -69,7 +69,7 @@ const UnderstandingSection = () => {
                 <div className="relative">
                   {/* Speech bubble */}
                   <div className="absolute -top-12 left-1/2 -translate-x-1/2 bg-white rounded-2xl px-3 py-2 shadow-lg whitespace-nowrap animate-bounce-gentle">
-                    <span className="text-gray-700 font-semibold text-xs md:text-sm">Ask me anything!</span>
+                    <span className="text-gray-700 font-semibold text-xs md:text-sm">Talk to Budlee</span>
                     {/* Bubble tail */}
                     <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-3 h-3 bg-white transform rotate-45"></div>
                   </div>
