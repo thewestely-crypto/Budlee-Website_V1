@@ -9,7 +9,7 @@ const AfterSchoolSection = () => {
           {/* Left Side - Text Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
             {/* Headline - Same font as hero tagline with green color */}
-            <h2 className="hero-tagline text-2xl md:text-3xl lg:text-[32px] mb-8 md:mb-10 whitespace-nowrap text-green-600">
+            <h2 className="hero-tagline text-2xl md:text-3xl lg:text-[32px] mb-8 md:mb-10 whitespace-nowrap !text-green-600">
               What happens after school?
             </h2>
             
