@@ -7,29 +7,8 @@ const UnderstandingSection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           
-          {/* Left Side - Text Content */}
-          <div className="w-full lg:w-1/2 text-center lg:text-left">
-            {/* Headline - Same font as hero tagline with green color */}
-            <h2 className="hero-tagline text-2xl md:text-3xl lg:text-[32px] mb-8 md:mb-10 whitespace-nowrap !text-green-600">
-              Understanding without pressure
-            </h2>
-            
-            {/* Story Lines */}
-            <div className="space-y-3 md:space-y-4">
-              <p className="text-xl md:text-2xl text-gray-700 font-medium">
-                Students ask questions <span className="text-green-600 font-bold">freely</span>.
-              </p>
-              <p className="text-xl md:text-2xl text-gray-700 font-medium">
-                Budlee explains{' '}
-                <span className="text-green-600 font-semibold">calmly</span>,{' '}
-                <span className="text-green-500 font-semibold italic">clearly</span>,{' '}
-                <span className="text-green-700 font-bold">patiently</span>.
-              </p>
-            </div>
-          </div>
-
-          {/* Right Side - Video Placeholder */}
-          <div className="w-full lg:w-1/2 flex justify-center">
+          {/* Left Side - Video Placeholder */}
+          <div className="w-full lg:w-1/2 flex justify-center order-2 lg:order-1">
             <div className="relative">
               {/* Decorative background shape */}
               <div className="absolute -inset-4 bg-gradient-to-br from-green-100 to-yellow-50 rounded-3xl transform -rotate-2"></div>
@@ -90,6 +69,27 @@ const UnderstandingSection = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Right Side - Text Content */}
+          <div className="w-full lg:w-1/2 text-center lg:text-left order-1 lg:order-2">
+            {/* Headline - Same font as hero tagline with green color */}
+            <h2 className="hero-tagline text-2xl md:text-3xl lg:text-[32px] mb-8 md:mb-10 whitespace-nowrap !text-green-600">
+              Understanding without pressure
+            </h2>
+            
+            {/* Story Lines */}
+            <div className="space-y-3 md:space-y-4">
+              <p className="text-xl md:text-2xl text-gray-700 font-medium">
+                Students ask questions <span className="text-green-600 font-bold">freely</span>.
+              </p>
+              <p className="text-xl md:text-2xl text-gray-700 font-medium">
+                Budlee explains{' '}
+                <span className="text-green-600 font-semibold">calmly</span>,{' '}
+                <span className="text-green-500 font-semibold italic">clearly</span>,{' '}
+                <span className="text-green-700 font-bold">patiently</span>.
+              </p>
             </div>
           </div>
         </div>
