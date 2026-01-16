@@ -58,13 +58,11 @@ const UnderstandingSection = () => {
                       {/* Bubble tail */}
                       <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-white transform rotate-45"></div>
                     </div>
-                    {/* Yellow background circle */}
-                    <div className="absolute inset-0 w-14 h-14 md:w-16 md:h-16 bg-yellow-300 rounded-full -m-1 shadow-lg"></div>
-                    {/* Budlee with wave animation */}
+                    {/* Budlee with wave animation - increased size */}
                     <img 
                       src="https://customer-assets.emergentagent.com/job_smart-budlee/artifacts/my42xssr_logo%20v1.png" 
                       alt="Budlee" 
-                      className="w-12 h-12 md:w-14 md:h-14 object-contain animate-wave cursor-pointer hover:scale-110 transition-transform duration-300 relative z-10"
+                      className="w-16 h-16 md:w-20 md:h-20 object-contain animate-wave cursor-pointer hover:scale-110 transition-transform duration-300"
                     />
                   </div>
                 </div>
