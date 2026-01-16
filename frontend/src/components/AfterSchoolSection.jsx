@@ -9,7 +9,7 @@ const AfterSchoolSection = () => {
           {/* Left Side - Text Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
             {/* Headline - Same font as hero tagline with green color */}
-            <h2 className="hero-tagline text-2xl md:text-3xl lg:text-[32px] mb-8 md:mb-10 whitespace-nowrap !text-green-600">
+            <h2 className="hero-tagline text-2xl md:text-3xl lg:text-[32px] mb-8 md:mb-10 whitespace-nowrap gradient-text">
               What happens after school?
             </h2>
             
@@ -19,10 +19,10 @@ const AfterSchoolSection = () => {
                 Homework is done.
               </p>
               <p className="text-xl md:text-2xl text-gray-700 font-medium">
-                But <span className="text-orange-500 font-bold">doubts</span> remain.
+                But <span className="gradient-text font-bold">doubts</span> remain.
               </p>
               <p className="text-xl md:text-2xl text-gray-700 font-medium">
-                <span className="text-green-600 font-bold">Curiosity</span> <em className="text-gray-500">quietly fades.</em>
+                <span className="gradient-text font-bold">Curiosity</span> <em className="text-gray-500">quietly fades.</em>
               </p>
             </div>
             
@@ -32,7 +32,7 @@ const AfterSchoolSection = () => {
                 Marks don't show <span className="text-gray-700 font-semibold">understanding</span>.
               </p>
               <p className="text-xl md:text-2xl text-gray-500 font-semibold">
-                They never show <span className="text-green-600 font-bold">curiosity</span>.
+                They never show <span className="gradient-text font-bold">curiosity</span>.
               </p>
             </div>
           </div>
