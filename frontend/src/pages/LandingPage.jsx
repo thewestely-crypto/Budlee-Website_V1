@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection';
 import AfterSchoolSection from '../components/AfterSchoolSection';
 import UnderstandingSection from '../components/UnderstandingSection';
 import PracticeSection from '../components/PracticeSection';
+import CuriositySection from '../components/CuriositySection';
 import Footer from '../components/Footer';
 
 const LandingPage = () => {
@@ -15,6 +16,7 @@ const LandingPage = () => {
         <AfterSchoolSection />
         <UnderstandingSection />
         <PracticeSection />
+        <CuriositySection />
       </main>
       <Footer />
     </div>
