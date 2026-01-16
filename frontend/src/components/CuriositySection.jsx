@@ -2,27 +2,38 @@ import React from 'react';
 
 const CuriositySection = () => {
   const interestTopics = [
-    { name: "Space", size: "large", position: "top-4 left-8", delay: "0s" },
-    { name: "AI", size: "large", position: "top-8 right-12", delay: "0.5s" },
-    { name: "Robotics", size: "medium", position: "top-20 left-20", delay: "1s" },
-    { name: "Quantum", size: "small", position: "bottom-24 left-6", delay: "0.3s" },
-    { name: "Mars", size: "medium", position: "bottom-16 right-8", delay: "0.8s" },
-    { name: "Coding", size: "small", position: "top-32 right-6", delay: "1.2s" },
-    { name: "Astronomy", size: "small", position: "bottom-8 left-24", delay: "0.6s" },
-    { name: "Neurons", size: "small", position: "bottom-32 right-24", delay: "0.2s" },
+    { name: "Space", angle: 0, distance: 85, size: "large", delay: "0s" },
+    { name: "AI", angle: 45, distance: 90, size: "large", delay: "0.5s" },
+    { name: "Robotics", angle: 90, distance: 80, size: "medium", delay: "1s" },
+    { name: "Quantum", angle: 135, distance: 88, size: "small", delay: "0.3s" },
+    { name: "Mars", angle: 180, distance: 85, size: "medium", delay: "0.8s" },
+    { name: "Coding", angle: 225, distance: 82, size: "small", delay: "1.2s" },
+    { name: "Astronomy", angle: 270, distance: 88, size: "small", delay: "0.6s" },
+    { name: "Neurons", angle: 315, distance: 85, size: "small", delay: "0.2s" },
   ];
 
   const getSizeClasses = (size) => {
     switch(size) {
       case 'large':
-        return 'px-5 py-2.5 text-base font-bold';
+        return 'px-4 py-2 text-sm md:text-base font-bold';
       case 'medium':
-        return 'px-4 py-2 text-sm font-semibold';
+        return 'px-3 py-1.5 text-xs md:text-sm font-semibold';
       case 'small':
-        return 'px-3 py-1.5 text-xs font-medium';
+        return 'px-2.5 py-1 text-xs font-medium';
       default:
-        return 'px-4 py-2 text-sm font-semibold';
+        return 'px-3 py-1.5 text-sm font-semibold';
     }
+  };
+
+  const getPosition = (angle, distance) => {
+    const radian = (angle * Math.PI) / 180;
+    const x = Math.cos(radian) * distance;
+    const y = Math.sin(radian) * distance;
+    return {
+      left: `calc(50% + ${x}px)`,
+      top: `calc(50% + ${y}px)`,
+      transform: 'translate(-50%, -50%)'
+    };
   };
 
   return (
@@ -30,42 +41,44 @@ const CuriositySection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           
-          {/* Left Side - Interest Bubbles Visual */}
+          {/* Left Side - Circular Orbital Design */}
           <div className="w-full lg:w-1/2 flex justify-center order-2 lg:order-1">
             <div className="relative">
-              {/* Decorative background shape */}
-              <div className="absolute -inset-4 bg-gradient-to-br from-green-100 to-yellow-50 rounded-3xl transform -rotate-2"></div>
+              {/* Outer glow */}
+              <div className="absolute inset-0 w-[280px] h-[280px] md:w-[360px] md:h-[360px] bg-gradient-to-br from-green-200/30 to-yellow-200/30 rounded-full blur-xl -m-4"></div>
               
-              {/* Main Container */}
-              <div className="relative bg-gradient-to-br from-white to-green-50/50 rounded-2xl md:rounded-3xl overflow-hidden shadow-xl w-[300px] h-[280px] md:w-[420px] md:h-[320px] border-4 border-white">
+              {/* Main Circular Container */}
+              <div className="relative w-[280px] h-[280px] md:w-[360px] md:h-[360px] rounded-full bg-gradient-to-br from-white to-green-50/80 shadow-2xl border-4 border-white overflow-visible">
                 
-                {/* Floating Interest Bubbles */}
-                {interestTopics.map((topic, index) => (
-                  <div
-                    key={index}
-                    className={`absolute ${topic.position} animate-float-slow`}
-                    style={{ animationDelay: topic.delay }}
-                  >
-                    <div className={`bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 cursor-pointer ${getSizeClasses(topic.size)}`}>
-                      {topic.name}
+                {/* Orbital rings */}
+                <div className="absolute inset-4 md:inset-6 rounded-full border border-green-200/40"></div>
+                <div className="absolute inset-12 md:inset-16 rounded-full border border-green-200/30"></div>
+                <div className="absolute inset-20 md:inset-24 rounded-full border border-green-200/20"></div>
+
+                {/* Floating Interest Bubbles - Orbiting */}
+                {interestTopics.map((topic, index) => {
+                  const mobileDistance = topic.distance * 0.75;
+                  return (
+                    <div
+                      key={index}
+                      className="absolute animate-float-slow z-10"
+                      style={{
+                        ...getPosition(topic.angle, window?.innerWidth < 768 ? mobileDistance : topic.distance),
+                        animationDelay: topic.delay
+                      }}
+                    >
+                      <div className={`bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 cursor-pointer whitespace-nowrap ${getSizeClasses(topic.size)}`}>
+                        {topic.name}
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
 
-                {/* Connecting lines (subtle) */}
-                <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-20">
-                  <line x1="50%" y1="50%" x2="20%" y2="15%" stroke="#4CAF50" strokeWidth="1" strokeDasharray="4" />
-                  <line x1="50%" y1="50%" x2="80%" y2="20%" stroke="#4CAF50" strokeWidth="1" strokeDasharray="4" />
-                  <line x1="50%" y1="50%" x2="15%" y2="75%" stroke="#4CAF50" strokeWidth="1" strokeDasharray="4" />
-                  <line x1="50%" y1="50%" x2="85%" y2="70%" stroke="#4CAF50" strokeWidth="1" strokeDasharray="4" />
-                  <line x1="50%" y1="50%" x2="30%" y2="40%" stroke="#4CAF50" strokeWidth="1" strokeDasharray="4" />
-                </svg>
-
-                {/* Budlee Character - Center, observing */}
+                {/* Budlee Character - Center, like a sun */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
                   <div className="relative">
                     {/* Glow effect behind Budlee */}
-                    <div className="absolute inset-0 w-20 h-20 md:w-24 md:h-24 bg-yellow-200 rounded-full -m-2 md:-m-3 blur-md opacity-60"></div>
+                    <div className="absolute inset-0 w-20 h-20 md:w-24 md:h-24 bg-yellow-200 rounded-full -m-2 md:-m-3 blur-md opacity-70 animate-pulse-slow"></div>
                     {/* Yellow background circle */}
                     <div className="absolute inset-0 w-16 h-16 md:w-20 md:h-20 bg-yellow-300 rounded-full -m-1 md:-m-2 shadow-lg"></div>
                     {/* Budlee with observing animation */}
@@ -75,7 +88,7 @@ const CuriositySection = () => {
                       className="w-14 h-14 md:w-16 md:h-16 object-contain animate-nod cursor-pointer hover:scale-110 transition-transform duration-300 relative z-10"
                     />
                     {/* Observing indicator */}
-                    <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-white rounded-full px-2 py-1 shadow-md">
+                    <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-white rounded-full px-2 py-1 shadow-md">
                       <span className="text-xs">👀</span>
                     </div>
                   </div>
