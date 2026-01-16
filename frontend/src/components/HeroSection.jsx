@@ -86,7 +86,7 @@ const HeroSection = () => {
                       <div className="absolute inset-0 w-14 h-14 md:w-20 md:h-20 -m-1 md:-m-2 rounded-full bg-white/30 animate-ping"></div>
                       {/* Main button */}
                       <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white shadow-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 relative z-10">
-                        <div className="w-9 h-9 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center shadow-lg">
+                        <div className="w-9 h-9 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-green-400 via-emerald-500 to-teal-400 flex items-center justify-center shadow-lg">
                           <Play className="w-4 h-4 md:w-5 md:h-5 text-white fill-white ml-0.5" />
                         </div>
                       </div>
