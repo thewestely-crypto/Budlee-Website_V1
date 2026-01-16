@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="w-full">
       {/* Top Section - CTA with Green Gradient */}
-      <div className="bg-gradient-to-r from-green-500 via-green-500 to-green-600 py-12 md:py-16 px-4 md:px-12 lg:px-20">
+      <div className="bg-gradient-to-r from-green-500 via-emerald-500 to-teal-400 py-12 md:py-16 px-4 md:px-12 lg:px-20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
             {/* Budlee Character */}
