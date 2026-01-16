@@ -95,15 +95,11 @@ const CuriositySection = () => {
                 {/* Budlee Character - Center, like a sun */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
                   <div className="relative">
-                    {/* Glow effect behind Budlee */}
-                    <div className="absolute inset-0 w-20 h-20 md:w-24 md:h-24 bg-yellow-200 rounded-full -m-2 md:-m-3 blur-md opacity-70 animate-pulse-slow"></div>
-                    {/* Yellow background circle */}
-                    <div className="absolute inset-0 w-16 h-16 md:w-20 md:h-20 bg-yellow-300 rounded-full -m-1 md:-m-2 shadow-lg"></div>
-                    {/* Budlee with observing animation */}
+                    {/* Budlee with observing animation - increased size */}
                     <img 
                       src="https://customer-assets.emergentagent.com/job_smart-budlee/artifacts/my42xssr_logo%20v1.png" 
                       alt="Budlee" 
-                      className="w-14 h-14 md:w-16 md:h-16 object-contain animate-nod cursor-pointer hover:scale-110 transition-transform duration-300 relative z-10"
+                      className="w-20 h-20 md:w-24 md:h-24 object-contain animate-nod cursor-pointer hover:scale-110 transition-transform duration-300"
                     />
                   </div>
                 </div>
