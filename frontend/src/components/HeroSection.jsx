@@ -183,7 +183,7 @@ const HeroSection = () => {
               {curriculumData.classes.map((item, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 bg-gradient-to-r from-green-400 to-green-500 text-white font-bold text-xs md:text-sm px-3 py-1 md:px-4 md:py-1.5 rounded-full shadow-sm hover:shadow-md hover:from-green-500 hover:to-green-600 transition-all duration-300 cursor-pointer"
+                  className="flex-shrink-0 bg-gradient-to-r from-green-400 via-emerald-500 to-teal-400 text-white font-bold text-xs md:text-sm px-3 py-1 md:px-4 md:py-1.5 rounded-full shadow-sm hover:shadow-md hover:from-green-500 hover:via-emerald-600 hover:to-teal-500 transition-all duration-300 cursor-pointer"
                 >
                   {item.class}
                 </div>
