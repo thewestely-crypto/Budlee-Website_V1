@@ -67,10 +67,10 @@ const PracticeSection = () => {
                 <button className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 group z-10">
                   <div className="relative">
                     {/* Outer pulsing ring */}
-                    <div className="absolute inset-0 w-20 h-20 -m-2 rounded-full bg-green-400/30 animate-ping"></div>
+                    <div className="absolute inset-0 w-20 h-20 -m-2 rounded-full bg-teal-400/30 animate-ping"></div>
                     {/* Main button */}
                     <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white shadow-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 relative z-10">
-                      <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center shadow-lg">
+                      <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-br from-green-400 via-emerald-500 to-teal-400 flex items-center justify-center shadow-lg">
                         <Play className="w-5 h-5 md:w-6 md:h-6 text-white fill-white ml-1" />
                       </div>
                     </div>
