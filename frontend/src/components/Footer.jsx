@@ -8,13 +8,12 @@ const Footer = () => {
       <div className="bg-gradient-to-r from-green-500 via-emerald-500 to-teal-400 py-12 md:py-16 px-4 md:px-12 lg:px-20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
-            {/* Budlee Character */}
+            {/* Budlee Character - increased size, no yellow circle */}
             <div className="relative">
-              <div className="absolute inset-0 w-20 h-20 md:w-24 md:h-24 bg-yellow-300 rounded-full -m-2 shadow-lg"></div>
               <img 
                 src="https://customer-assets.emergentagent.com/job_smart-budlee/artifacts/my42xssr_logo%20v1.png" 
                 alt="Budlee" 
-                className="w-16 h-16 md:w-20 md:h-20 object-contain relative z-10 animate-bounce-gentle"
+                className="w-20 h-20 md:w-28 md:h-28 object-contain animate-bounce-gentle"
               />
             </div>
             
