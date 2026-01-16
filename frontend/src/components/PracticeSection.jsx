@@ -10,20 +10,20 @@ const PracticeSection = () => {
           {/* Left Side - Text Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
             {/* Headline - Same font as hero tagline with green color */}
-            <h2 className="hero-tagline text-2xl md:text-3xl lg:text-[32px] mb-8 md:mb-10 whitespace-nowrap !text-green-600">
+            <h2 className="hero-tagline text-2xl md:text-3xl lg:text-[32px] mb-8 md:mb-10 whitespace-nowrap gradient-text">
               Practice that actually helps
             </h2>
             
             {/* Story Lines */}
             <div className="space-y-3 md:space-y-4">
               <p className="text-xl md:text-2xl text-gray-700 font-medium">
-                <span className="text-green-600 font-bold">Section-wise</span> questions.
+                <span className="gradient-text font-bold">Section-wise</span> questions.
               </p>
               <p className="text-xl md:text-2xl text-gray-700 font-medium">
-                <span className="text-green-600 font-bold">Instant</span> feedback.
+                <span className="gradient-text font-bold">Instant</span> feedback.
               </p>
               <p className="text-xl md:text-2xl text-gray-700 font-medium">
-                Mistakes become <span className="text-green-600 font-bold">learning signals</span>.
+                Mistakes become <span className="gradient-text font-bold">learning signals</span>.
               </p>
             </div>
           </div>
