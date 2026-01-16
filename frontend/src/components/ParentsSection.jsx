@@ -45,7 +45,7 @@ const ParentsSection = () => {
               <div className="relative bg-white rounded-2xl md:rounded-3xl shadow-2xl border border-gray-100 w-[300px] md:w-[400px] overflow-hidden">
                 
                 {/* Dashboard Header */}
-                <div className="bg-gradient-to-r from-green-500 to-green-600 px-5 py-4 flex items-center justify-between">
+                <div className="bg-gradient-to-r from-green-500 via-emerald-500 to-teal-400 px-5 py-4 flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
                       <span className="text-white font-bold text-sm">R</span>
