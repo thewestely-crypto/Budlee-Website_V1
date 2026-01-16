@@ -47,8 +47,8 @@ const CuriositySection = () => {
                 {/* Floating Interest Bubbles - Evenly distributed at 45° intervals */}
                 {interestTopics.map((topic, index) => {
                   // Calculate position based on angle (0° = right, 90° = bottom, 180° = left, 270° = top)
-                  const radius = 120; // distance from center in px for desktop
-                  const mobileRadius = 95; // distance from center for mobile
+                  const radius = 105; // distance from center in px for desktop (reduced from 120)
+                  const mobileRadius = 85; // distance from center for mobile (reduced from 95)
                   const angleInRadians = (topic.angle * Math.PI) / 180;
                   
                   return (
@@ -71,7 +71,7 @@ const CuriositySection = () => {
 
                 {/* Mobile version of bubbles */}
                 {interestTopics.map((topic, index) => {
-                  const mobileRadius = 95;
+                  const mobileRadius = 85;
                   const angleInRadians = (topic.angle * Math.PI) / 180;
                   
                   return (
