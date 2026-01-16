@@ -85,7 +85,7 @@ const CuriositySection = () => {
                         animationDelay: topic.delay
                       }}
                     >
-                      <div className={`bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 cursor-pointer whitespace-nowrap ${getSizeClasses(topic.size)}`}>
+                      <div className={`bg-gradient-to-r from-green-400 via-emerald-500 to-teal-400 text-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 cursor-pointer whitespace-nowrap ${getSizeClasses(topic.size)}`}>
                         {topic.name}
                       </div>
                     </div>
