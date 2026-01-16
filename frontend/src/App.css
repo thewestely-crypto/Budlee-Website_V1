@@ -68,6 +68,29 @@
   animation: pulse-slow 4s ease-in-out infinite;
 }
 
+/* Peek-a-boo animation for Budlee */
+@keyframes peek-a-boo {
+  0%, 100% {
+    transform: translateY(0) rotate(-12deg);
+  }
+  30% {
+    transform: translateY(-15px) rotate(-8deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(-8deg);
+  }
+  60% {
+    transform: translateY(-5px) rotate(-10deg);
+  }
+  80% {
+    transform: translateY(-12px) rotate(-6deg);
+  }
+}
+
+.animate-peek-a-boo {
+  animation: peek-a-boo 3s ease-in-out infinite;
+}
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
