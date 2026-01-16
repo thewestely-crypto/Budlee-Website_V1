@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import AfterSchoolSection from '../components/AfterSchoolSection';
+import UnderstandingSection from '../components/UnderstandingSection';
 import Footer from '../components/Footer';
 
 const LandingPage = () => {
@@ -11,6 +12,7 @@ const LandingPage = () => {
       <main className="flex-grow">
         <HeroSection />
         <AfterSchoolSection />
+        <UnderstandingSection />
       </main>
       <Footer />
     </div>
