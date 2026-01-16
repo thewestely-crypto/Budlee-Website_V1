@@ -142,7 +142,7 @@ const HeroSection = () => {
                   Are you a school?{' '}
                   <a 
                     href="#" 
-                    className="text-green-600 font-semibold underline underline-offset-2 hover:text-green-700 transition-colors"
+                    className="gradient-text font-semibold underline underline-offset-2 hover:opacity-80 transition-opacity"
                   >
                     Get Budlee for Your School
                   </a>
