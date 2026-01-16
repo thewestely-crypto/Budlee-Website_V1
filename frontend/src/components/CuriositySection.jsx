@@ -114,20 +114,20 @@ const CuriositySection = () => {
           {/* Right Side - Text Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left order-1 lg:order-2">
             {/* Headline - Same font as hero tagline with green color */}
-            <h2 className="hero-tagline text-2xl md:text-3xl lg:text-[32px] mb-8 md:mb-10 whitespace-nowrap !text-green-600">
+            <h2 className="hero-tagline text-2xl md:text-3xl lg:text-[32px] mb-8 md:mb-10 whitespace-nowrap gradient-text">
               When curiosity shows up
             </h2>
             
             {/* Story Lines */}
             <div className="space-y-3 md:space-y-4">
               <p className="text-xl md:text-2xl text-gray-700 font-medium">
-                Some students return to <span className="text-green-600 font-bold">space</span>.
+                Some students return to <span className="gradient-text font-bold">space</span>.
               </p>
               <p className="text-xl md:text-2xl text-gray-700 font-medium">
-                Some explore <span className="text-green-600 font-bold">physics</span> deeper.
+                Some explore <span className="gradient-text font-bold">physics</span> deeper.
               </p>
               <p className="text-xl md:text-2xl text-gray-500 font-medium mt-6">
-                Budlee <span className="text-green-600 font-semibold italic">notices</span> ~ and <span className="text-green-700 font-bold">follows</span>.
+                Budlee <span className="gradient-text font-semibold italic">notices</span> ~ and <span className="gradient-text font-bold">follows</span>.
               </p>
             </div>
           </div>
