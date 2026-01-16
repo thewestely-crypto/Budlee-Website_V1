@@ -162,7 +162,7 @@ const HeroSection = () => {
             <div className="flex items-center gap-3 md:gap-6">
               {/* Title */}
               <span className="text-gray-500 font-medium text-sm md:text-base whitespace-nowrap">
-                Aligned with <span className="text-green-600 font-bold">CBSE</span> Curriculum
+                Aligned with <span className="gradient-text font-bold">CBSE</span> Curriculum
               </span>
               
               {/* Separator - Hidden on mobile */}
