@@ -110,14 +110,14 @@ const AfterSchoolSection = () => {
                 <div className="absolute -bottom-6 -right-6 md:-bottom-8 md:-right-8">
                   <div className="relative">
                     {/* Thought bubble from Budlee */}
-                    <div className="absolute -top-10 -left-16 bg-white rounded-full px-3 py-1 shadow-md">
+                    <div className="absolute -top-10 -left-16 bg-white rounded-full px-3 py-1 shadow-md animate-bounce-gentle">
                       <span className="text-xs text-gray-600 font-medium">🤔</span>
                     </div>
-                    {/* Budlee looking concerned */}
+                    {/* Budlee peeking with animation */}
                     <img 
                       src="https://customer-assets.emergentagent.com/job_smart-budlee/artifacts/my42xssr_logo%20v1.png" 
                       alt="Budlee" 
-                      className="w-20 h-20 md:w-24 md:h-24 object-contain transform -rotate-12 hover:rotate-0 transition-transform duration-300"
+                      className="w-20 h-20 md:w-24 md:h-24 object-contain animate-peek-a-boo cursor-pointer hover:scale-110 transition-transform duration-300"
                     />
                   </div>
                 </div>
